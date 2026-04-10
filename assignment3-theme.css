@@ -1,196 +1,253 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(136, 69, 137);
-    font-family: 'DM Sans', Tahoma, Geneva, Verdana, sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(136, 69, 137);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-    font-family: 'Lavishly Yours', 'Times New Roman', Times, serif;
-    font-size: 40px;
-    background-color: rgb(179, 125, 194);
-    text-align: center;
-    margin: 0px;
-    text-shadow: 5px 5px 5px white;
+  font-family: 'Agbalumo','Times New Roman', Times, serif;
+  font-size: 40px;
+  background-color: rgb(179, 125, 194);
+  text-align: center;
+  margin: 0px;
+  text-shadow: 5px 5px 5px white;
 }
 
 h1 {
-    padding-bottom: 15px;
-    margin: inherit;
+  padding-bottom: 15px;
+  margin: inherit;
+}
+
+h2, h3 {
+  font-family: 'Alan Sans', Helvetica, sans-serif;
+}
+
+.section-titles {
+  background-color: rgb(105 218 214);
+  box-shadow: 0px 2px 3px black;
+  padding: 1px 0;
+  min-width: 1000px;
+  justify-items: center;
+  text-shadow: 1px 1px 5px white;
+}
+
+#hook-line {
+  background-color: transparent;
+  box-shadow: none;
+  font-size: 23pt;
+  text-shadow: 2px 2px 5px white;
 }
 
 footer {
-    font-weight: bold;
-    font-size: large;
-    background-color: rgb(118, 2, 72);
-    text-align: center;
-    height: 75px;
-    margin: 10px 0px 0px;
-    align-content: center;
-    color: rgb(45, 0, 38);
+  font-weight: bold;
+  font-size: large;
+  background-color: rgb(118, 2, 72);
+  text-align: center;
+  height: 75px;
+  margin: 10px 0px 0px;
+  align-content: center;
+  color: rgb(45, 0, 38);
 }
 
 footer a {
-    color: rgb(45, 0, 38);
+  color: rgb(45, 0, 38);
 }
 
 form {
-    border: 2px solid rgb(108, 70, 154);
-    border-radius: 50px;
-    padding: 30px 10px 30px 30px;
-    background-color: rgb(165, 138, 199);
-    box-shadow: 1px 1px 10px black;
+  border: 2px solid rgb(108, 70, 154);
+  border-radius: 50px;
+  padding: 30px 10px 30px 30px;
+  background-color: rgb(165, 138, 199);
+  box-shadow: 1px 1px 10px black;
 }
 
 label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-input, textarea {
-    border: 2px inset black;
-    border-radius: 15px;
-    padding: 5px;
-    font-family: inherit;
-}
-
-a {
-    color: rgb(105, 0, 135);
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(241, 210, 255);
+input,
+textarea {
+  border: 2px inset black;
+  border-radius: 15px;
+  padding: 5px;
+  font-family: inherit;
 }
 
 nav ul {
-    justify-self: center;
-    list-style-type: none;
+  justify-self: center;
+  list-style-type: none;
 }
 
 nav ul li {
-    float: left;
-    background: rgb(118, 2, 72);
-    border: 1px solid rgb(249, 216, 255);
-    border-radius: 10px;
-    margin: auto 5px;
-    box-shadow: 3px 5px 6px black;
-    width: 175px;
-    justify-items: center;
+  float: left;
+  background: rgb(118, 2, 72);
+  border: 1px solid rgb(249, 216, 255);
+  border-radius: 10px;
+  margin: auto 5px;
+  box-shadow: 3px 5px 6px black;
+  width: 175px;
+  justify-items: center;
 }
 
 nav ul li:hover {
-    box-shadow: 1px 2px 2px black;
+  box-shadow: 1px 2px 2px black;
 }
 
-nav a {
-    display: block;
-    color: aliceblue;
-    font-size: 25px;
-    text-decoration: none;
+nav a, a {
+  display: block;
+  color: aliceblue;
+  font-size: 25px;
+  text-decoration: none;
 }
 
-nav a:hover {
-    color: rgb(232, 184, 252);
+nav a:hover, a:hover {
+  color: rgb(232, 184, 252);
 }
 
 .main-center {
-    width: 1000px;
-    margin: 70px 50px 0px;
-    padding: 30px 40px 30px 30px;
-    background-color: rgb(147, 138, 199);
-    justify-self: center;
-    color: rgb(45, 0, 38);
+  width: 1000px;
+  margin: 70px 50px 0px;
+  padding: 30px 0px 30px;
+  background-color: rgb(156, 121, 201);
+  justify-self: center;
+  justify-items: center;
+  color: rgb(45, 0, 38);
 }
 
 .flex-container {
-    display:flex;
-    flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.products {
-    width: 300px;
-    min-height: 400px;
-    border: 1px solid rgb(207, 201, 243);
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px black;
-    margin: 10px;
-    overflow: hidden;
+.flex-container img {
+  margin: 20px;
 }
 
-.products:hover {
-    box-shadow: -5px -5px 15px 3px black;
+.flex-box {
+  /* width: 1500px; */
+  /* min-height: 400px; */
+  border: 1px solid rgb(215, 201, 243);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px black;
+  overflow: hidden;
+  margin:10px 10px 20px;
 }
 
-.products img{
-    object-fit: contain;
-    width: 100%;
+.flex-box:hover {
+  box-shadow: -5px -5px 15px 3px black;
 }
 
-.products p {
-    padding: 0px 10px;
+.flex-box img {
+  object-fit: contain;
+  width: 100%;
 }
 
-.products .prod-name {
-    font-size: large;
-    font-weight: bold;
-    margin: 5px auto;
+/* .flex-box p {
+  padding: 0px 10px;
+} */
+
+/* .products .prod-name {
+  font-size: large;
+  font-weight: bold;
+  margin: 5px auto;
 }
 
 .products > .description {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: rgb(91, 81, 139);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: rgb(91, 81, 139);
 }
 
 .products > .description:hover {
-    white-space: normal;
-    overflow: visible;
-}
+  white-space: normal;
+  overflow: visible;
+} */
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    column-gap: 30px;
-}
-
-#website-bio {
-    width: 630px;
-    float: left;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 30px;
 }
 
 #welcome-message {
-    background-color: rgba(251, 224, 255, 0.607);
-    padding: 20px 50px;
-    margin-bottom: 40px;
-    text-shadow: 1px 1px 2px whitesmoke;
+  width: 600px;
 }
 
-#error_messages {
-    background-color: pink;
-    border-radius: 50px;
-    border: 2px solid rgb(71, 0, 0);
-    box-shadow: 3px 3px 10px;
-    height: fit-content;
-    display: none;
-    padding: 40px 20px 40px 20px;
+#demo-audio {
+  justify-self: center;
+  background-color: rgb(207, 152, 255);
+  padding: 10px 40px;
+}
+
+/* #welcome-message {
+  background-color: rgba(251, 224, 255, 0.607);
+  padding: 20px 50px;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px whitesmoke;
+} */
+
+/* #error_messages {
+  background-color: pink;
+  border-radius: 50px;
+  border: 2px solid rgb(71, 0, 0);
+  box-shadow: 3px 3px 10px;
+  height: fit-content;
+  display: none;
+  padding: 40px 20px 40px 20px;
 }
 
 #error_messages li {
-    padding: 10px;
-}
+  padding: 10px;
+} */
 
-.buttons {
-    font-size: large;
-    padding: 5px 10px;
-    margin: 5px;
-    background-color: rgb(133, 104, 168);
-    box-shadow: 2px 2px 5px black;
-    font-weight: bold;
-    color: rgb(45, 0, 38);
+/* .buttons {
+  font-size: large;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: rgb(133, 104, 168);
+  box-shadow: 2px 2px 5px black;
+  font-weight: bold;
+  color: rgb(45, 0, 38);
 }
 
 .buttons:hover {
-    box-shadow: 1px 1px 2px black;
-    font-style: italic;
+  box-shadow: 1px 1px 2px black;
+  font-style: italic;
+} */
+
+table, td, th {
+  text-align: left;
+  padding: 5px 20px;
+}
+table td:nth-child(1) {
+  width: 35%;
+}
+table td:nth-child(2) {
+  width: 25%;
+}
+table td:nth-child(3) {
+  width: 40%;
+}
+table th {
+  padding: 10px 0;
+}
+
+#resume-button {
+  background-color: rgb(105, 0, 67);
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 0px 350px 20px;
+  font-size: medium;
+  box-shadow: 2px 2px 5px white;
+  text-align: center;
+}
+#resume-button:hover {
+  box-shadow: 3px 3px 10px black;
+}
+
+img:hover {
+  box-shadow: 2px 2px 5px black;
 }
